@@ -1,0 +1,32 @@
+<view class="container">
+  <view class="banner">
+
+
+  </view>
+  <view class="block-area">
+    <view class="title">{{des}}</view>
+    <view>
+      <view class="block-info-left">
+        <text class="color-1 vm">每班人数上限：</text>
+        <text class="vm">20</text>
+      </view>
+
+    </view>
+  </view>
+
+  <view class="banner image ">
+    <image mode="widthFix" src="/image/guide_1.png"></image>
+  </view>
+
+
+  <view class="section">
+    <view class="section-title">活动详情</view>
+    <view class="m-t-10 text">
+      亲子沙盘游戏，了解孩子内心世界，促进亲子关系 小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者小程序开发者开发者
+    </view>
+  </view>
+  <view class="section">
+    <button type="primary" bindtap="join">我要报名</button>
+  </view>
+
+</view>

@@ -1,0 +1,61 @@
+<!--onebyone.wxml-->
+<view class="body">
+  <view class="createrInfo">
+    <view class="createrFace">
+      <image src="{{createrUrl}}" class="createrUrl"><text class="{{status.class}}">{{status.text}}</text></image>
+      
+    </view>
+    <view class="createrNickName">{{createrNickName}}</view>
+    <view class="createTime">{{createTime}}</view>
+  </view>
+  <view class="description">
+    {{description}}
+  </view>
+  <view class="storeList">
+    <view class="store" wx:for="{{stores}}" wx:for-index="idx">
+      <view class="storeName">{{item.storeName}}</view>
+      <text class="storePrice">￥{{item.storePrice}}</text>
+      <view class="storeNum">
+        <text class="hasSale">{{item.hasSale.text}} {{item.hasSale.num}}</text>
+        <text class="canSale" wx:if="{{item.canSale.num}}">{{item.canSale.text}} {{item.canSale.num}}</text>
+      </view>
+      <view class="addOrDel">
+        <view class="{{item.delClass}}" id="del{{idx}}" data-store-id="{{item.storeId}}" bindtap="delNumFn">-</view>
+        <text class="buy">{{item.buy}}</text>
+        <view class="{{item.addClass}}" id="add{{idx}}" data-store-id="{{item.storeId}}" bindtap="addNumFn">+</view>
+      </view>
+    </view>
+  </view>
+  <view class="customs">
+    <view class="custom" wx:for="{{customs}}">
+      <view class="customNo">{{item.customNo}}</view>
+      <view class="customFace">
+        <image src="{{item.customFace}}" class="customFaceImg"></image>
+      </view>
+      
+      <view class="buyStores">
+        <text class="customNickName">{{item.customNickName}}</text>
+        <block wx:for="{{item.storeNameAndNum}}" wx:for-item="store">
+          <text class="storeNameAndNum">{{store.storeName}} x {{store.number}}</text>
+        </block>
+        <block>
+          <text class="customOthers">备注信息：{{item.customOthers}}</text>
+        </block>
+      </view>
+      <text class="joinTime">{{item.joinTime}}</text>
+    </view>
+  </view>
+  <view class="opration">
+    <view class="buttons">
+      <block>
+        <button size="mini" type="warn" class="stopBtn">{{stopBtn.text}}</button>
+        <button size="mini" type="default" class="totalCustomerBtn">{{totalCustomerBtn.text}}</button>
+      </block>
+      <view class="totalPrice">总价：<text class="price">{{totalPrice}}</text></view>
+    </view>
+    <view class="updateOrder">
+      <input type="text" class="otherInput" placeholder="请填写您的特殊要求" placeholder-class="otherInputPlaceHolder" value="{{otherInput}}" bindinput="inputFn" />
+      <button size="mini" type="primary" disabled="{{updateBtn.disabled}}" class="updateBtn">{{updateBtn.text}}</button>
+    </view>
+  </view>
+</view>

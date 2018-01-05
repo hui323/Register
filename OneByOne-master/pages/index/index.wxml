@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <button class="xinjian" type="primary" bindtap="jumpToNew">{{copywriter.xinjianBtn.text}}</button>
+    <view class="wode">
+      <button class="wofabu" type="default" bindtap="jumpToMyPush">{{copywriter.wofabuBtn.text}}</button>
+      <button class="wocanyu" type="default">{{copywriter.wocanyuBtn.text}}</button>
+    </view>
+  </view>
+</view>

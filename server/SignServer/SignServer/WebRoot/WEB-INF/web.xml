@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name></display-name>
+	<servlet>
+		<servlet-name>ProjectList</servlet-name>
+		<servlet-class>com.alex.server.sign.ProjectListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProjectList</servlet-name>
+		<url-pattern>/ProjectList</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ProjectDetail</servlet-name>
+		<servlet-class>com.alex.server.sign.ProjectDetailServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProjectDetail</servlet-name>
+		<url-pattern>/ProjectDetail</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ProjectJoin</servlet-name>
+		<servlet-class>com.alex.server.sign.ProjectJoinServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProjectJoin</servlet-name>
+		<url-pattern>/ProjectJoin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ProjectCancel</servlet-name>
+		<servlet-class>com.alex.server.sign.ProjectCancelServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProjectCancel</servlet-name>
+		<url-pattern>/ProjectCancel</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SaveData</servlet-name>
+		<servlet-class>com.alex.server.sign.SaveDataServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SaveData</servlet-name>
+		<url-pattern>/SaveData</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

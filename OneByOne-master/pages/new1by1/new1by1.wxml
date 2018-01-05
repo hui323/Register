@@ -1,0 +1,41 @@
+<!--new1by1.wxml-->
+
+<view class="body">
+  <view class="tips">{{copywriter.title}}</view>
+  <view class="des">
+    <textarea id="description" placeholder="{{textareaPlaceHolder}}" placeholder-class="placeholder" bindinput="textareaFn" />
+  </view>
+  <view class="storeList" wx:for="{{stores}}" wx:for-index="idx" id="store{{idx}}" wx:if="{{item}}">
+    <view class="list">
+      <label>{{copywriter.storeName}}</label><input id="name{{item.num}}" data-store-index="{{idx}}" type="text" placeholder="{{copywriter.storeNamePlaceHolder}}" placeholder-class="placeholder" value="{{item['name'+item.num]}}" bindinput="inputFn" />
+    </view>
+    <view class="list">
+      <label>{{copywriter.storePrice}}</label><input id="price{{item.num}}" data-store-index="{{idx}}" type="digit" value="{{item['price'+item.num]}}" bindinput="inputFn" />
+    </view>
+    <view class="list">
+      <label>{{copywriter.storeNum}}</label><input id="number{{item.num}}" data-store-index="{{idx}}" type="number" placeholder="{{copywriter.storeNumPlaceHolder}}" placeholder-class="placeholder" value="{{item['number'+item.num]}}" bindinput="inputFn" />
+    </view>
+    <block wx:if="{{delIconDisplay}}">
+      <icon type="cancel" size="26" class="cancelIcon"  id="delete{{idx}}" bindtap="deleteStoreFn" />
+    </block>
+  </view>
+  <view class="opration">
+    <button type="default" size="mini" bindtap="addStoreFn" id="addStore">{{copywriter.addStore}}</button>
+  </view>
+  <view class="setTimeout">
+    <label>{{copywriter.endTime}}</label>
+    <picker mode="date" value="{{endDate}}" start="{{today}}" bindchange="bindDateChange" class="datePicker">
+      <view class="picker">
+      {{endDate}}
+      </view>
+    </picker>
+    <picker mode="time" value="{{endTime}}" bindchange="bindTimeChange" class="timePicker">
+    <view class="picker">
+      {{endTime}}
+    </view>
+  </picker>
+  </view>
+</view>
+<view class="create">
+  <button disabled="{{buttons.createBtn.createBtnEnable}}" type="primary" bindtap="createOnebyOneFn">{{buttons.createBtn.createOneByOne}}</button>
+</view>

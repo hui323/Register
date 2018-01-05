@@ -1,0 +1,261 @@
+/* onebyone.wxss */
+image{vertical-align:middle;}
+
+.createrInfo{
+  padding: 20rpx;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+.createrFace{
+  float: left;
+}
+.createrUrl{
+  width:160rpx;
+  height:160rpx;
+  position: relative;
+}
+.createrNickName{
+  font-size:40rpx;
+  color:#999;
+  margin-left: 200rpx;
+  line-height: 100rpx;
+  border-bottom: 1px solid #ccc;
+}
+.createTime{
+  font-size: 30rpx;
+  color:#aaa;
+  line-height: 60rpx;
+  margin-left: 200rpx;
+}
+.green{
+  font-size:30rpx;
+  background-color:green;
+  color:#fff;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  line-height: 40rpx;
+  text-align: center;
+}
+.red{
+  font-size:30rpx;
+  background-color:red;
+  color:#fff;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  line-height: 40rpx;
+  text-align: center;
+}
+
+
+.description{
+  font-size:35rpx;
+  padding:30rpx 20rpx;
+  border-bottom: 1px solid #ccc;
+}
+
+.storeList{
+}
+.store{
+  padding:16rpx 20rpx;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+.storeName{
+  font-size: 30rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.storePrice{
+  width:40%;
+  font-size:40rpx;
+  color:red;
+  font-weight: 800;
+  height:68rpx;
+  float: left;
+  line-height: 68rpx;
+}
+.storeNum{
+  width:28%;
+  font-size:20rpx;
+  color:#ccc;
+  height: 68rpx;
+  float: left;
+}
+.hasSale{
+  height: 30rpx;
+  display: block;
+  line-height: 30rpx;
+  padding-top: 4rpx;
+}
+.canSale{
+  height: 30rpx;
+  display: block;
+  line-height: 30rpx;
+  padding-bottom: 4rpx;
+}
+.addOrDel{
+  float: right;
+  width: 32%;
+  height:80rpx;
+  overflow: hidden;
+}
+.buy{
+  font-size:30rpx;
+  color:#333;
+  display: inline-block;
+  height: 80rpx;
+  line-height: 80rpx;
+  float: left;
+  width: 60rpx;
+  text-align: center;
+}
+.addCan{
+  width:60rpx;
+  height:60rpx;
+  float: left;
+  border-radius: 40rpx;
+  border: 4rpx solid red;
+  font-size: 60rpx;
+  line-height: 50rpx;
+  text-align: center;
+  color: red;
+}
+.addNoCan{
+  width:60rpx;
+  height:60rpx;
+  float: left;
+  border-radius: 40rpx;
+  border: 4rpx solid #ccc;
+  font-size: 60rpx;
+  line-height: 50rpx;
+  text-align: center;
+  color: #ccc;
+}
+.delCan{
+  width:60rpx;
+  height:60rpx;
+  float: left;
+  border-radius: 40rpx;
+  border: 4rpx solid red;
+  font-size: 60rpx;
+  line-height: 50rpx;
+  text-align: center;
+  color: red;
+}
+.delNoCan{
+  width:60rpx;
+  height:60rpx;
+  float: left;
+  border-radius: 40rpx;
+  border: 4rpx solid #ccc;
+  font-size: 60rpx;
+  line-height: 50rpx;
+  text-align: center;
+  color: #ccc;
+}
+.customs{
+  padding:0 0 130rpx;
+}
+.custom{
+  padding: 20rpx;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+
+.customNo{
+  font-size: 30rpx;
+  line-height: 80rpx;
+  float: left;
+  text-align: right;
+  width: 40rpx;
+}
+.customFace{
+  float: left;
+  margin-left: 20rpx;
+}
+.customFaceImg{
+  width: 80rpx;
+  height: 80rpx;
+}
+.buyStores{
+  float: left;
+  width: 560rpx;
+  margin-left:150rpx;
+  margin-top: -80rpx;
+}
+.customNickName{
+  font-size: 26rpx;
+  line-height: 40rpx;
+  display: block;
+}
+.storeNameAndNum{
+  font-size: 30rpx;
+  line-height: 40rpx;
+  display: block;
+  word-break: break-all; 
+  word-wrap:break-word;
+}
+.customOthers{
+  font-size: 30rpx;
+  line-height: 40rpx;
+  display: block;
+  word-break: break-all; 
+  word-wrap:break-word;
+}
+.joinTime{
+  font-size: 20rpx;
+  clear: left;
+  position: absolute;
+  right: 30rpx;
+  color: #ccc;
+}
+
+
+.opration{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 10rpx 20rpx;
+  box-shadow:0 -1rpx 5rpx #ccc;
+}
+.buttons{
+  position: relative;
+  height: 64rpx;
+}
+.totalCustomerBtn{
+  margin-left: 20rpx;
+}
+.totalPrice{
+  float: right;
+  font-size:30rpx;
+  line-height: 60rpx;
+}
+.price{
+  color: red;
+  font-size: 38rpx;
+  line-height: 60rpx;
+}
+.updateOrder{
+  overflow: hidden;
+}
+.otherInput{
+  float: left;
+  font-size: 26rpx;
+  border:1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 5rpx;
+  width: 500rpx;
+}
+.otherInputPlaceHolder{
+  color: #ccc;
+}
+.updateBtn{
+  float: right;
+}

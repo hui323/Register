@@ -1,0 +1,69 @@
+
+.jc-img{
+    width: 100%;
+    height: 210px;
+}
+
+.section::after{
+     
+}
+.section-item{
+    border-bottom: 1px solid #eee;
+    height: 50pt;
+    line-height: 50pt;
+}
+.section-item:last-child{
+    border:none;
+}
+
+.section-input{
+  display: flex;
+  flex-direction: row;
+    height: 100%;
+    line-height: 1;
+}
+.block{
+    padding: 10pt;
+}
+.btn{
+    width: 40%;
+    margin: 10pt;
+    box-sizing: border-box;
+}
+
+.label{
+    margin-right: 30px;
+}
+
+.icon{
+    float: left;
+    width: 20pt;
+    height: 20pt;
+    margin-top: 8pt;
+    margin-right: 10px;
+}
+
+label {
+  display: inline-block;
+  min-width: 270rpx;
+  margin-right: 20rpx;
+}
+form{
+  width: 100%;
+}
+.picker-text {
+  margin-left: 20rpx;
+  position: relative;
+}
+
+
+.page-section{
+  margin-bottom: 10rpx
+}
+
+.item-section{
+  display: flex;
+  direction: row;
+  margin: 15rpx;
+}
+

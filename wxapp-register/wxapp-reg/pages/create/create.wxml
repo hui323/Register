@@ -1,0 +1,96 @@
+<view class="container bg">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <!--
+    <view>
+      <image class="jc-img" src="{{imageUrl}}"></image>
+      <view class="hide">
+        <input value="{{imageUrl}}" disabled="true" name="image"></input>
+      </view>
+    </view>
+    -->
+    <view class="section">
+     
+        <text>kidsName</text>
+         
+        <input type="text" focus placeholder="please input kids name" maxlength="11" bindinput="bindChildNameInput"></input>
+      
+    </view>
+
+    <view class="section">
+
+      <text>ParentsName</text>
+      <input type="text" placeholder="please input kids name" maxlength="11" bindinput="bindParentNameInput"></input>
+
+    </view>
+
+    <view class="section">
+
+      <text>CellPhone</text>
+      <input type="number" placeholder="please input kids name" maxlength="11" bindinput="bindMobilePhoneNameInput"></input>
+
+    </view>
+
+
+    <view class="section">
+      <view class="page-section" >类型一</view>
+      <radio-group name="radio" bindchange="bindClassOneSelected">
+        <label>
+          <radio value="1" />沙1班</label>
+        <label>
+          <radio value="5" />沙5班</label>
+        <label>
+          <radio value="2" />沙2班</label>
+        <label>
+          <radio value="6" />沙6班</label>
+        <label>
+          <radio value="3" />沙3班</label>
+        <label>
+          <radio value="7" />沙7班</label>
+        <label>
+          <radio value="4" />沙4班</label>
+        <label>
+          <radio value="8" />沙8班</label>
+      </radio-group>
+    </view>
+
+    <view class="section">
+      <view class="page-section" >类型二</view>
+      <radio-group name="radio" bindchange="bindClassTwoSelected">
+        <label>
+          <radio value="1" />绘1班</label>
+        <label>
+          <radio value="5" />绘5班</label>
+        <label>
+          <radio value="2" />绘2班</label>
+        <label>
+          <radio value="6" />绘6班</label>
+        <label>
+          <radio value="3" />绘3班</label>
+        <label>
+          <radio value="7" />绘7班</label>
+        <label>
+          <radio value="4" />绘4班</label>
+        <label>
+          <radio value="8" />绘8班</label>
+      </radio-group>
+    </view>
+
+    <view class="section">
+
+      <view class="menu-item">
+        <image class="menu-icon" src="/image/text.png"></image>
+        <view class="menu-text">
+          <text class="vm">活动描述</text>
+        </view>
+        <view class="m-t-5">
+          <textarea value="{{text}}" placeholder="说些什么吧"></textarea>
+        </view>
+      </view>
+
+    </view>
+    <view class="section">
+      <button class="" type="primary" form-type="submit">提交</button>
+    </view>
+  </form>
+
+</view>
